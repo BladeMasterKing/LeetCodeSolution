@@ -27,6 +27,7 @@ public class QuestionCollections01 {
 		}
 		return new int[0];
 	}
+	
 	/**
 	 * 哈希表
 	 */
@@ -41,4 +42,25 @@ public class QuestionCollections01 {
 		return new int[0];
 	}
 	
+	
+	/**
+	 * 一个由正整数组成的整数数组 nums ，返回其中可被 3 整除的所有偶数的平均值。
+	 * 被2和3整除，就是6的倍数
+	 */
+	public static int q2455Solution1(int[] nums) {
+		int sum = 0;
+		int count = 0;
+		for(int num : nums) {
+			if(num % 6 == 0 ) {
+				sum += num;
+				count ++;
+			}
+		}
+		if(count > 0) {
+			return Math.round(sum / count);
+		}
+		return 0;
+	}
+	
+
 }
