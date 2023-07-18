@@ -1,5 +1,7 @@
 package org.leetcode.solution.LinkedList;
 
+import static org.leetcode.solution.LinkedList.ListNode.buildListNode;
+
 /**
  * <p>两数相加</p>
  * <p>两个非空链表，表示两个非负整数，每位数字按照 逆序 存储，每个节点只能存储一位数字</p>
@@ -13,30 +15,6 @@ package org.leetcode.solution.LinkedList;
  * <p>输出：[8,9,9,9,0,0,0,0,1]</p>
  */
 public class Solution_0002 {
-
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(){}
-        ListNode(int val){
-            this.val = val;
-        }
-        ListNode(int val, ListNode next){
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString(){
-            StringBuilder b = new StringBuilder();
-            ListNode n = this;
-            while (null != n){
-               b.append(n.val);
-               n = n.next;
-           }
-            return b.toString();
-        }
-    }
 
     /**
      * 正序遍历链表，存储相加进位
@@ -72,26 +50,6 @@ public class Solution_0002 {
         return head;
     }
 
-    public static ListNode buildListNode(int[] array){
-        ListNode node= new ListNode(Integer.parseInt(String.valueOf(array[0])));
-        ListNode next = node;
-        int i = 1;
-        while (i<array.length){
-            next.next = new ListNode(Integer.parseInt(String.valueOf(array[i])));
-            next = next.next;
-            i++;
-        }
-
-        return node;
-    }
-
-    public static String join(int[] array){
-        StringBuilder b = new StringBuilder();
-        for(int a : array){
-            b.append(a);
-        }
-        return b.toString();
-    }
     public static void main(String[] args) {
         int[] a = {2,4,3},b={5,6,4};
         ListNode l1 = buildListNode(a);

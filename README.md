@@ -3,9 +3,11 @@ Java语言的leetcode题解
 
 ## 数组
 - [0001.两数之和](/src/org/leetcode/solution/Array/Solution_0001.java)
+- [0015.三数之和](/src/org/leetcode/solution/Array/Solution_0015.java)
 - [0167.两数之和2-输入有序数组](/src/org/leetcode/solution/Array/Solution_0167.java)
 - [1253.重构2行二进制矩阵](/src/org/leetcode/solution/Array/Solution_1253.java)
 - [1681.最小不兼容性](/src/org/leetcode/solution/Array/Solution_1681.java)
+- [1911.最大子序列交替和](/src/org/leetcode/solution/Array/Solution_1911.java)
 - [2679.矩阵中的和](/src/org/leetcode/solution/Array/Solution_2679.java)
 - 
 ## 链表

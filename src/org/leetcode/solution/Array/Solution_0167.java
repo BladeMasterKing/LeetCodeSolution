@@ -3,7 +3,7 @@ package org.leetcode.solution.Array;
 import java.util.Arrays;
 
 /**
- * <p>两数之和 2 - 输入有序数组</p>
+ * <h2>两数之和 2 - 输入有序数组</h2>
  * <p>一个下标从 1 开始的整数数组 numbers ，该数组已按<strong>非递减顺序排列</strong>，从数组中找出满足相加之和等于目标数<strong>target</strong>的两个数。
  * 如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 <= index1 < index2 <= numbers.length 。</p>
  *
